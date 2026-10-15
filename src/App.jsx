@@ -4,7 +4,7 @@ import { About } from "./pages/About";
 import { Movie } from "./pages/Movie";
 import { Contact } from "./pages/contact";
 import { AppLayout } from "./components/layout/AppLayout";
-
+import "./App.css";
 
 const App = () => {
 
