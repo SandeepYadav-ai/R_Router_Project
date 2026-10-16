@@ -121,6 +121,7 @@ a:hover {
   background-color: #b50c12;
   color: #fff;
   text-transform: capitalize;
+  font-size: 15px;
   border-radius: 0.6rem;
   -webkit-border-radius: 0.6rem;
   -moz-border-radius: 0.6rem;
@@ -473,6 +474,12 @@ main .section-hero {
     color: var(--buttonColor);
     margin-bottom: 1.6rem;
   }
+}
+
+.error-section img {
+  width: 420px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* contact page  */
