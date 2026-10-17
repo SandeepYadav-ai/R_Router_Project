@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-//import "./Card.css";
+import "./Card.css";
 /* eslint-disable react/prop-types */
 
 export const Card = ({ curMovie }) => {
