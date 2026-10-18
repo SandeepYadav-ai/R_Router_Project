@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router";
+import { NavLink, useLoaderData } from "react-router";
 
 export const MovieDetails = ()=> {
     const movieData = useLoaderData();
@@ -17,6 +17,16 @@ export const MovieDetails = ()=> {
     Awards,
     imdbRating,
   } = movieData;
+
+  // 192min
+  const totalMinutes = Runtime.replace("min", "");
+  const hours = Math.floor(totalMinutes / 60); // Calculate the number of hours
+  const minutes = totalMinutes % 60; // Calculate the remaining minutes
+
+  console.log(hours, minutes);
+
+  const formattedTime = `${hours}hr ${minutes}min`;
+  console.log(formattedTime);
     
     return(
         <li className="hero-container hero-movie-container">
