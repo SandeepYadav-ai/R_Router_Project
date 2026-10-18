@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import "./Card.css";
+import { Movie } from "../../pages/Movie";
 /* eslint-disable react/prop-types */
 
 export const Card = ({ curMovie }) => {
@@ -12,9 +13,9 @@ export const Card = ({ curMovie }) => {
         </div>
         <div className="ticket-container">
           <div className="ticket__content">
-            {/* <NavLink to={`/movie/${imdbID}`}> */}
+            <NavLink to={`/movie/${imdbID}`}>
               <button className="ticket__buy-btn">Watch now</button>
-            {/* </NavLink> */}
+            </NavLink>
           </div>
         </div>
       </div>
